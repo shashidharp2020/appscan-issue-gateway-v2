@@ -1,0 +1,24 @@
+{
+    "maxissues": 1,
+    "issuestates": "New,Open",
+    "issueseverities": "High,Medium",
+    "imurl": "<Jira URL>",
+    "imUserName": "<username>",
+    "imPassword": "<encrypted password>",
+    "improjectkey": "<projectkey>",
+    "imissuetype": "<issuetype>",
+    "imsummary": "Security issue: %IssueType% found by %Scanner%",
+    "severitymap": {
+        "High": "High",
+        "Medium": "Medium",
+        "Low": "Low",
+        "Informational": "Low"
+    },
+    "attributeMappings": [
+        {
+            "imAttr": "labels",
+            "appScanAttr": "Domain",
+            "type": "Array"
+        }
+    ]
+}
