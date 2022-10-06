@@ -30,7 +30,7 @@ methods.decrypt = (text) => {
 }
 
 methods.hash = () => {
-    return crypto.pbkdf2Sync(args[0], constants.HASHING_SALT,  1000, 64, 'sha512').toString('hex');
+    return crypto.pbkdf2Sync(args[1], constants.HASHING_SALT,  1000, 64, 'sha512').toString('hex');
 }
 try {
     if(cmdprogram.encrypt) 
